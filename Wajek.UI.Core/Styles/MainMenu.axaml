@@ -1,0 +1,15 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style Selector="Border.MainMenuTab">
+        <Setter Property="Padding" Value="8"/>
+        <Setter Property="Background" Value="{StaticResource PrimaryBrush}"/>
+    </Style>
+
+    <Style Selector="Border.MainMenuTabContent">
+        <Setter Property="Background" Value="{StaticResource WindowBackgroundHighBrush}"/>
+        <Setter Property="BorderThickness" Value="0,0,0,1"/>
+        <Setter Property="BorderBrush" Value="{StaticResource Shade300}"/>
+    </Style>
+
+</Styles>

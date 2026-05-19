@@ -1,0 +1,21 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:Wajek.UI.Core.Controls"
+             x:Class="Wajek.UI.Core.Controls.WuiMainMenuButton"
+             x:DataType="vm:WuiMainMenuButton">
+
+    <Button x:Name="PART_Button"
+            Command="{Binding Command, RelativeSource={RelativeSource AncestorType=vm:WuiMainMenuButton}}"
+            CommandParameter="{Binding CommandParameter, RelativeSource={RelativeSource AncestorType=vm:WuiMainMenuButton}}">
+        <StackPanel Orientation="Horizontal"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Spacing="8">
+            <TextBlock x:Name="PART_Icon" Classes="Icon" VerticalAlignment="Center"
+                Text="{Binding Icon, RelativeSource={RelativeSource AncestorType=vm:WuiMainMenuButton}}"/>
+            <TextBlock x:Name="PART_Text" VerticalAlignment="Center"
+                Text="{Binding Text, RelativeSource={RelativeSource AncestorType=vm:WuiMainMenuButton}}"/>
+        </StackPanel>
+    </Button>
+
+</UserControl>

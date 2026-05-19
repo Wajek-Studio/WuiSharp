@@ -1,0 +1,11 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:Wajek.UI.Core.Controls"
+             x:Class="Wajek.UI.Core.Controls.WuiMainMenuTabContent"
+             x:DataType="vm:WuiMainMenuTabContent">
+
+    <Border Classes="MainMenuTabContent">
+        <ContentControl Content="{Binding InnerContent, RelativeSource={RelativeSource AncestorType=vm:WuiMainMenuTabContent}}"/>
+    </Border>
+
+</UserControl>

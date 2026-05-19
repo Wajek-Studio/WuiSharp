@@ -1,0 +1,22 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:wui="clr-namespace:Wajek.UI.Core.Controls">
+
+    <Style Selector="TextBlock.Icon">
+        <Setter Property="FontFamily" Value="avares://Wajek.UI.Core/Assets/Fonts/lucide.ttf#lucide"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+
+    <Style Selector="Border.ShortcutIcon">
+        <Setter Property="Padding" Value="4,0"/>
+        <Setter Property="Background" Value="{StaticResource PrimaryBrush}"/>
+        <Setter Property="CornerRadius" Value="4"/>
+    </Style>
+
+    <Style Selector="TextBlock.ShortcutIconText">
+        <Setter Property="Foreground" Value="{StaticResource OnPrimaryBrush}"/>
+        <Setter Property="FontFamily" Value="{StaticResource RobotoMono}"/>
+    </Style>
+
+</Styles>

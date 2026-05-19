@@ -9,7 +9,23 @@
         <local:ViewLocator/>
     </Application.DataTemplates>
   
-    <Application.Styles>
+      <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceInclude Source="avares://Wajek.UI.Core/Resources/WajekResources.axaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <!-- Font — nanti pindah ke Core jika font di-embed ke assembly Core -->
+            <FontFamily x:Key="Inter">avares://Wajek.UI.Demos/Assets/Fonts/Inter#Inter</FontFamily>
+            <FontFamily x:Key="RobotoMono">avares://Wajek.UI.Demos/Assets/Fonts/RobotoMono#Roboto Mono</FontFamily>
+
+            </ResourceDictionary>
+
+    </Application.Resources>
+
+      <Application.Styles>
         <FluentTheme />
+        <StyleInclude Source="avares://Wajek.UI.Core/Styles/WajekStyles.axaml"/>
     </Application.Styles>
+    
 </Application>

@@ -1,0 +1,14 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:Wajek.UI.Core.Controls"
+             x:Class="Wajek.UI.Core.Controls.WuiMainMenuTab"
+             x:DataType="vm:WuiMainMenuTab">
+
+    <Border Classes="MainMenuTab">
+        <Grid ColumnDefinitions="Auto,*,Auto">
+            <ContentControl Grid.Column="0"  Content="{Binding LeftContent, RelativeSource={RelativeSource AncestorType=vm:WuiMainMenuTab}}"/>
+            <ContentControl Grid.Column="2"  Content="{Binding RightContent, RelativeSource={RelativeSource AncestorType=vm:WuiMainMenuTab}}"/>
+        </Grid>
+    </Border>
+
+</UserControl>

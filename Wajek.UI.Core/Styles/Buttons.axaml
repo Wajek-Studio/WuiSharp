@@ -119,20 +119,40 @@
         <Setter Property="Foreground" Value="{StaticResource Shade100}"/>
     </Style>
 
-    <!-- <Style Selector="Button.MainMenuButton /template/ ContentPresenter#PART_ContentPresenter">
+    <Style Selector="Button.Smooth /template/ ContentPresenter#PART_ContentPresenter">
         <Setter Property="Background" Value="Transparent"/>
-        <Setter Property="Foreground" Value="White"/>
         <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Foreground" Value="White"/>
     </Style>
 
-    <Style Selector="Button.MainMenuButton:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+    <Style Selector="Button.Smooth:pointerover /template/ ContentPresenter#PART_ContentPresenter">
         <Setter Property="Background" Value="{StaticResource OnPrimaryBrush01}"/>
-        <Setter Property="Foreground" Value="White"/>
-        <Setter Property="BorderThickness" Value="0"/>
     </Style>
 
-    <Style Selector="Button.MainMenuButton:focus /template/ Border#PART_ContentPresenter, 
-                     Button.MainMenuButton:focus-visible /template/ Border#PART_ContentPresenter">
+    <Style Selector="Button.Smooth:pressed /template/ ContentPresenter#PART_ContentPresenter">
         <Setter Property="Background" Value="{StaticResource OnPrimaryBrush02}"/>
+    </Style>
+
+    <Style Selector="Button.Smooth:focus /template/ Border#PART_Outer, 
+                     Button.Smooth:focus-visible /template/ Border#PART_Outer">
+        <Setter Property="Background" Value="Transparent"/>
+    </Style>
+
+    <Style Selector="Button.Smooth:focus /template/ ContentPresenter#PART_ContentPresenter,
+                     Button.Smooth:focus-visible /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Background" Value="{StaticResource OnPrimaryBrush01}"/>
+    </Style>
+
+    <Style Selector="Button.Active /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Background" Value="{StaticResource OnPrimaryBrush}"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Foreground" Value="{StaticResource Shade700}"/>
+    </Style>
+
+    <!-- <Style Selector="Button.Smooth:disabled /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="BorderBrush" Value="Transparent"/>  
+        <Setter Property="Foreground" Value="{StaticResource OnPrimaryBrush}"/>
+        <Setter Property="Background" Value="Transparent"/>
     </Style> -->
+    
 </Styles>

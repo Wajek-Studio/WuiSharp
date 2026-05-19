@@ -4,22 +4,103 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:wui="clr-namespace:Wajek.UI.Core.Controls;assembly=Wajek.UI.Core"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" d:DesignWidth="1024" d:DesignHeight="600"
         x:Class="Wajek.UI.Demos.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
-        Title="Wajek.UI.Demos">
+        Title="Wajek.UI.Demos"
+        WindowStartupLocation="CenterScreen"
+        Width="1024" Height="600">
 
     <Design.DataContext>
-        <!-- This only sets the DataContext for the previewer in an IDE,
-             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
-    <StackPanel>
-        <wui:WuiRibbon />
-        <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-    </StackPanel>
+    <Grid RowDefinitions="Auto,*">
 
+        <!-- Menu Area -->
+        <Grid Grid.Row="0" RowDefinitions="Auto,Auto" Classes="MainMenu">
+
+            <!-- Top Tab Bar -->
+            <wui:WuiMainMenuTab Grid.Row="0">
+                <wui:WuiMainMenuTab.LeftContent>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Classes="ButtonIcon Smooth Active">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Classes="Icon" VerticalAlignment="Center" Text="{StaticResource HouseIcon}"/>
+                                <TextBlock VerticalAlignment="Center" Text="Home"/>
+                            </StackPanel>
+                        </Button>
+
+                        <Button Classes="ButtonIcon Smooth">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Classes="Icon" VerticalAlignment="Center" Text="{StaticResource FolderIcon}"/>
+                                <TextBlock VerticalAlignment="Center" Text="Master"/>
+                            </StackPanel>
+                        </Button>
+
+                        <Button Classes="ButtonIcon Smooth">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Classes="Icon" VerticalAlignment="Center" Text="{StaticResource ReceiptTextIcon}"/>
+                                <TextBlock VerticalAlignment="Center" Text="Transaksi"/>
+                            </StackPanel>
+                        </Button>
+
+                        <Button Classes="ButtonIcon Smooth">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Classes="Icon" VerticalAlignment="Center" Text="{StaticResource Package2Icon}"/>
+                                <TextBlock VerticalAlignment="Center" Text="Persediaan"/>
+                            </StackPanel>
+                        </Button>
+
+                        <Button Classes="ButtonIcon Smooth">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Classes="Icon" VerticalAlignment="Center" Text="{StaticResource SettingsIcon}"/>
+                                <TextBlock VerticalAlignment="Center" Text="Settings"/>
+                            </StackPanel>
+                        </Button>
+
+                        <Button Classes="ButtonIcon Smooth">
+                            <StackPanel Orientation="Horizontal">
+                                <TextBlock Classes="Icon" VerticalAlignment="Center" Text="{StaticResource FileTextIcon}"/>
+                                <TextBlock VerticalAlignment="Center" Text="Laporan"/>
+                            </StackPanel>
+                        </Button>
+
+                    </StackPanel>
+                </wui:WuiMainMenuTab.LeftContent>
+            </wui:WuiMainMenuTab>
+
+            <!-- Sub Tab Content -->
+            <wui:WuiMainMenuTabContent Grid.Row="1">
+                <wui:WuiMainMenuTabContent.InnerContent>
+                    <StackPanel Orientation="Vertical" VerticalAlignment="Stretch">
+                        <Border Padding="8">
+                            <StackPanel Orientation="Horizontal" Spacing="8">
+                                <Button Classes="ButtonIcon">
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Classes="Icon" VerticalAlignment="Center" Text="{StaticResource ChartNoAxesColumnIcon}"/>
+                                        <TextBlock VerticalAlignment="Center" Text="Statistik"/>
+                                    </StackPanel>
+                                </Button>
+                                
+                                <Button Classes="ButtonIcon">
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Classes="Icon" VerticalAlignment="Center" Text="{StaticResource CircleArrowDownIcon}"/>
+                                        <TextBlock VerticalAlignment="Center" Text="Hutang"/>
+                                    </StackPanel>
+                                </Button>
+                            </StackPanel>
+                        </Border>
+                    </StackPanel>
+                </wui:WuiMainMenuTabContent.InnerContent>
+            </wui:WuiMainMenuTabContent>
+
+        </Grid>
+
+        <!-- Content Area -->
+        <!-- <wui:WuiContent Grid.Row="1" CurrentView="{Binding CurrentView}"/> -->
+
+    </Grid>
 
 </Window>
