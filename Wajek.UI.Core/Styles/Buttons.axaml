@@ -1,0 +1,138 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Global Button Style -->
+
+    <Style Selector="Button">
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="FontWeight" Value="Normal"/>
+        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Margin" Value="-4"/>
+
+        <Setter Property="Template">
+            <ControlTemplate>
+                <Border x:Name="PART_Outer">
+                    <ContentPresenter x:Name="PART_ContentPresenter"
+                                    Content="{TemplateBinding Content}"
+                                    ContentTemplate="{TemplateBinding ContentTemplate}"
+                                    HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                    VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}" />
+                </Border>
+            </ControlTemplate>
+        </Setter>
+    </Style>
+
+    <Style Selector="Button /template/ Border#PART_Outer">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="CornerRadius" Value="10"/>
+        <Setter Property="Padding" Value="4"/>
+        <Setter Property="Height" Value="44"/>
+    </Style>
+
+    <Style Selector="Button /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="BorderBrush" Value="{StaticResource Shade300}"/>  
+        <Setter Property="Foreground" Value="{StaticResource Shade600}"/>
+        <Setter Property="Background" Value="White"/>
+        <Setter Property="CornerRadius" Value="6"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Padding" Value="10, 0"/>
+    </Style>
+
+    <Style Selector="Button:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="BorderBrush" Value="{StaticResource Shade400}"/>
+        <Setter Property="Foreground" Value="{StaticResource Shade700}"/>
+    </Style>
+
+    <Style Selector="Button:pressed">
+        <Setter Property="RenderTransform" Value="None"/>
+    </Style>
+
+    <Style Selector="Button:pressed /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="BorderBrush" Value="{StaticResource Shade500}"/>
+        <Setter Property="Foreground" Value="{StaticResource Shade700}"/>
+        <Setter Property="Background" Value="{StaticResource Shade100}"/>
+    </Style>
+
+    <Style Selector="Button:focus /template/ Border#PART_Outer, 
+                     Button:focus-visible /template/ Border#PART_Outer">
+        <Setter Property="Background" Value="{StaticResource ShadeBrush02}"/>
+    </Style>
+
+    <Style Selector="Button:disabled">
+        <Setter Property="Opacity" Value="0.6"/>
+    </Style>
+
+    <Style Selector="Button:disabled /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="BorderBrush" Value="{StaticResource Shade300}"/>  
+        <Setter Property="Foreground" Value="{StaticResource Shade600}"/>
+        <Setter Property="Background" Value="White"/>
+    </Style>
+
+    <Style Selector="Button.ButtonIcon > StackPanel">
+        <Setter Property="Orientation" Value="Horizontal"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="Spacing" Value="8"/>
+    </Style>
+
+    <Style Selector="Button.ButtonIcon > StackPanel > TextBlock">
+        <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+
+    <Style Selector="Button.ButtonIcon.Filtered /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="BorderBrush" Value="{StaticResource SystemControlHighlightAccentBrush}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Background" Value="{StaticResource SystemControlHighlightListLowBrush}"/>
+    </Style>
+
+    <Style Selector="Button.button /template/ ContentPresenter">
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+    </Style>
+
+    <Style Selector="Button.Primary /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Background" Value="{StaticResource Blue500}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource Blue600}"/>
+        <Setter Property="Foreground" Value="{StaticResource Shade100}"/>
+    </Style>
+
+    <Style Selector="Button.Primary:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Background" Value="{StaticResource Blue600}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource Blue700}"/>
+        <Setter Property="Foreground" Value="White"/>
+    </Style>
+
+    <Style Selector="Button.Primary:pressed /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="BorderBrush" Value="{StaticResource Blue700}"/>
+        <Setter Property="Background" Value="{StaticResource Blue800}"/>
+        <Setter Property="Foreground" Value="White"/>
+    </Style>
+
+    <Style Selector="Button.Primary:focus /template/ Border#PART_Outer, 
+                     Button.Primary:focus-visible /template/ Border#PART_Outer">
+        <Setter Property="Background" Value="{StaticResource PrimaryBrush03}"/>
+    </Style>
+
+    <Style Selector="Button.Primary:disabled /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Background" Value="{StaticResource Blue500}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource Blue600}"/>
+        <Setter Property="Foreground" Value="{StaticResource Shade100}"/>
+    </Style>
+
+    <!-- <Style Selector="Button.MainMenuButton /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="BorderThickness" Value="0"/>
+    </Style>
+
+    <Style Selector="Button.MainMenuButton:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Background" Value="{StaticResource OnPrimaryBrush01}"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="BorderThickness" Value="0"/>
+    </Style>
+
+    <Style Selector="Button.MainMenuButton:focus /template/ Border#PART_ContentPresenter, 
+                     Button.MainMenuButton:focus-visible /template/ Border#PART_ContentPresenter">
+        <Setter Property="Background" Value="{StaticResource OnPrimaryBrush02}"/>
+    </Style> -->
+</Styles>

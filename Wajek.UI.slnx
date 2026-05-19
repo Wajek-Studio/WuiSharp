@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Wajek.UI.Core/Wajek.UI.Core.csproj" />
+  <Project Path="Wajek.UI.Demos/Wajek.UI.Demos.csproj" />
+</Solution>

@@ -1,0 +1,151 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <!-- ===================== COLORS ===================== -->
+    
+    <!-- Background Colors -->
+    <Color x:Key="WindowBackground">#F5F5F5</Color>
+    <Color x:Key="WindowBackgroundHigh">#FFFFFF</Color>
+    <Color x:Key="OnWindowBackground">#222222</Color>
+    <Color x:Key="OnWindowBackgroundDarker">#000000</Color>
+    
+    <!-- Primary Palette Colors -->
+    <Color x:Key="Blue100Color">#7EAAD3</Color>
+    <Color x:Key="Blue200Color">#5E9CD9</Color>
+    <Color x:Key="Blue300Color">#3A8FE4</Color>
+    <Color x:Key="Blue400Color">#1F82E5</Color>
+    <Color x:Key="Blue500Color">#1976D2</Color>
+    <Color x:Key="Blue600Color">#1669BB</Color>
+    <Color x:Key="Blue700Color">#135CA4</Color>
+    <Color x:Key="Blue800Color">#114F8D</Color>
+    <Color x:Key="Blue900Color">#0E4277</Color>
+
+    <!-- Shades Palette Colors -->
+    <Color x:Key="Shade100Color">#F2F2F2</Color>
+    <Color x:Key="Shade200Color">#D9D9D9</Color>
+    <Color x:Key="Shade300Color">#BFBFBF</Color>
+    <Color x:Key="Shade400Color">#A6A6A6</Color>
+    <Color x:Key="Shade500Color">#8C8C8C</Color>
+    <Color x:Key="Shade600Color">#737373</Color>
+    <Color x:Key="Shade700Color">#595959</Color>
+    <Color x:Key="Shade800Color">#404040</Color>
+    <Color x:Key="Shade900Color">#262626</Color>
+
+    <!-- Primary Colors -->
+    <Color x:Key="Primary">#1976D2</Color>
+    <Color x:Key="Primary100">#1669bb</Color>
+    <Color x:Key="PrimaryLow02">#145ca4</Color>
+    <Color x:Key="OnPrimary">#FFFFFF</Color>
+    <Color x:Key="PrimaryLight">#BBDEFB</Color>
+
+    <!-- Button States Colors -->
+    <Color x:Key="ButtonDefaultBackground">#efefef</Color>
+    <Color x:Key="ButtonDefaultBackgroundHover">#dedede</Color>
+    <Color x:Key="ButtonDefaultBackgroundPressed">#cdcdcd</Color>
+    
+    <!-- Text Colors -->
+    <Color x:Key="PrimaryText">#212121</Color>
+    <Color x:Key="SecondaryText">#757575</Color>
+    
+    <!-- Accent Colors -->
+    <Color x:Key="Accent">#FF4081</Color>
+    <Color x:Key="Success">#4CAF50</Color>
+    <Color x:Key="Warning">#FF9800</Color>
+    <Color x:Key="Error">#F44336</Color>
+
+    <!-- Misc -->
+    <Color x:Key="Border">#EFEFEF</Color>
+    <Color x:Key="BorderDarker">#CCCCCC</Color>
+
+    <!-- ===================== BRUSHES ===================== -->
+    
+    <!-- Background Brushes -->
+    <SolidColorBrush x:Key="WindowBackgroundBrush" Color="{StaticResource WindowBackground}"/>
+    <SolidColorBrush x:Key="WindowBackgroundHighBrush" Color="{StaticResource WindowBackgroundHigh}"/>
+    <SolidColorBrush x:Key="OnWindowBackgroundBrush" Color="{StaticResource OnWindowBackground}"/>
+    <SolidColorBrush x:Key="OnWindowBackgroundDarkerBrush" Color="{StaticResource OnWindowBackgroundDarker}"/>
+    
+    <!-- Primary Palette Brushes -->
+    <SolidColorBrush x:Key="Blue100" Color="{StaticResource Blue100Color}"/>
+    <SolidColorBrush x:Key="Blue200" Color="{StaticResource Blue200Color}"/>
+    <SolidColorBrush x:Key="Blue300" Color="{StaticResource Blue300Color}"/>
+    <SolidColorBrush x:Key="Blue400" Color="{StaticResource Blue400Color}"/>
+    <SolidColorBrush x:Key="Blue500" Color="{StaticResource Blue500Color}"/>
+    <SolidColorBrush x:Key="Blue600" Color="{StaticResource Blue600Color}"/>
+    <SolidColorBrush x:Key="Blue700" Color="{StaticResource Blue700Color}"/>
+    <SolidColorBrush x:Key="Blue800" Color="{StaticResource Blue800Color}"/>
+    <SolidColorBrush x:Key="Blue900" Color="{StaticResource Blue900Color}"/>
+
+    <!-- Shades Palette Brushes -->
+    <SolidColorBrush x:Key="Shade100" Color="{StaticResource Shade100Color}"/>
+    <SolidColorBrush x:Key="Shade200" Color="{StaticResource Shade200Color}"/>
+    <SolidColorBrush x:Key="Shade300" Color="{StaticResource Shade300Color}"/>
+    <SolidColorBrush x:Key="Shade400" Color="{StaticResource Shade400Color}"/>
+    <SolidColorBrush x:Key="Shade500" Color="{StaticResource Shade500Color}"/>
+    <SolidColorBrush x:Key="Shade600" Color="{StaticResource Shade600Color}"/>
+    <SolidColorBrush x:Key="Shade700" Color="{StaticResource Shade700Color}"/>
+    <SolidColorBrush x:Key="Shade800" Color="{StaticResource Shade800Color}"/>
+    <SolidColorBrush x:Key="Shade900" Color="{StaticResource Shade900Color}"/>
+
+    <!-- Shade Opacity Brushes -->
+    <SolidColorBrush x:Key="ShadeBrush01" Color="{StaticResource Shade500Color}" Opacity="0.1"/>
+    <SolidColorBrush x:Key="ShadeBrush02" Color="{StaticResource Shade500Color}" Opacity="0.2"/>
+    <SolidColorBrush x:Key="ShadeBrush03" Color="{StaticResource Shade500Color}" Opacity="0.3"/>
+    <SolidColorBrush x:Key="ShadeBrush04" Color="{StaticResource Shade500Color}" Opacity="0.4"/>
+    <SolidColorBrush x:Key="ShadeBrush05" Color="{StaticResource Shade500Color}" Opacity="0.5"/>
+    <SolidColorBrush x:Key="ShadeBrush06" Color="{StaticResource Shade500Color}" Opacity="0.6"/>
+    <SolidColorBrush x:Key="ShadeBrush07" Color="{StaticResource Shade500Color}" Opacity="0.7"/>
+    <SolidColorBrush x:Key="ShadeBrush08" Color="{StaticResource Shade500Color}" Opacity="0.8"/>
+    <SolidColorBrush x:Key="ShadeBrush09" Color="{StaticResource Shade500Color}" Opacity="0.9"/>
+
+    <!-- Primary Opacity Brushes -->
+    <SolidColorBrush x:Key="PrimaryBrush01" Color="{StaticResource Primary}" Opacity="0.1"/>
+    <SolidColorBrush x:Key="PrimaryBrush02" Color="{StaticResource Primary}" Opacity="0.2"/>
+    <SolidColorBrush x:Key="PrimaryBrush03" Color="{StaticResource Primary}" Opacity="0.3"/>
+    <SolidColorBrush x:Key="PrimaryBrush04" Color="{StaticResource Primary}" Opacity="0.4"/>
+    <SolidColorBrush x:Key="PrimaryBrush05" Color="{StaticResource Primary}" Opacity="0.5"/>
+    <SolidColorBrush x:Key="PrimaryBrush06" Color="{StaticResource Primary}" Opacity="0.6"/>
+    <SolidColorBrush x:Key="PrimaryBrush07" Color="{StaticResource Primary}" Opacity="0.7"/>
+    <SolidColorBrush x:Key="PrimaryBrush08" Color="{StaticResource Primary}" Opacity="0.8"/>
+    <SolidColorBrush x:Key="PrimaryBrush09" Color="{StaticResource Primary}" Opacity="0.9"/>
+
+    <!-- Primary Brushes -->
+    <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource Primary}"/>
+    <SolidColorBrush x:Key="Primary100Brush" Color="{StaticResource Primary100}"/>
+    <SolidColorBrush x:Key="PrimaryLow02Brush" Color="{StaticResource PrimaryLow02}"/>
+    <SolidColorBrush x:Key="PrimaryLow03Brush" Color="{StaticResource PrimaryLow02}"/>
+    <SolidColorBrush x:Key="OnPrimaryBrush" Color="{StaticResource OnPrimary}"/>
+    <SolidColorBrush x:Key="OnPrimaryBrush01" Color="{StaticResource OnPrimary}" Opacity="0.1"/>
+    <SolidColorBrush x:Key="OnPrimaryBrush02" Color="{StaticResource OnPrimary}" Opacity="0.2"/>
+    <SolidColorBrush x:Key="OnPrimaryBrush03" Color="{StaticResource OnPrimary}" Opacity="0.3"/>
+    <SolidColorBrush x:Key="PrimaryDarkBrush" Color="{StaticResource Primary}"/>
+    <SolidColorBrush x:Key="PrimaryLightBrush" Color="{StaticResource PrimaryLight}"/>
+
+    <!-- Button States Brushes -->
+    <SolidColorBrush x:Key="ButtonDefaultBackgroundBrush" Color="{StaticResource ButtonDefaultBackground}"/>
+    <SolidColorBrush x:Key="ButtonDefaultBackgroundHoverBrush" Color="{StaticResource ButtonDefaultBackgroundHover}"/>
+    <SolidColorBrush x:Key="ButtonDefaultBackgroundPressedBrush" Color="{StaticResource ButtonDefaultBackgroundPressed}"/>
+    <SolidColorBrush x:Key="ButtonDefaultBackgroundDisabledBrush" Color="{StaticResource ButtonDefaultBackground}" Opacity="0.5"/>
+    
+    <!-- Text Brushes -->
+    <SolidColorBrush x:Key="PrimaryTextBrush" Color="{StaticResource PrimaryText}"/>
+    <SolidColorBrush x:Key="SecondaryTextBrush" Color="{StaticResource SecondaryText}"/>
+    
+    <!-- Accent Brushes -->
+    <SolidColorBrush x:Key="AccentBrush" Color="{StaticResource Accent}"/>
+    <SolidColorBrush x:Key="SuccessBrush" Color="{StaticResource Success}"/>
+    <SolidColorBrush x:Key="WarningBrush" Color="{StaticResource Warning}"/>
+    <SolidColorBrush x:Key="ErrorBrush" Color="{StaticResource Error}"/>
+
+    <!-- Misc Brushes -->
+    <SolidColorBrush x:Key="BorderBrush" Color="{StaticResource Border}"/>
+    <SolidColorBrush x:Key="BorderDarkerBrush" Color="{StaticResource BorderDarker}"/>
+
+    <!-- Control Specific Brushes -->
+    <SolidColorBrush x:Key="DatePickerSpacerFill" Color="{StaticResource BorderDarker}"/>
+    <SolidColorBrush x:Key="TimePickerSpacerFill" Color="{StaticResource BorderDarker}"/>
+
+    <SolidColorBrush x:Key="DataGridRowGroupHeaderForegroundBrush" Color="{StaticResource Shade900Color}"/>
+    <SolidColorBrush x:Key="DataGridRowGroupHeaderBackgroundBrush" Color="{StaticResource Shade200Color}"/>
+    
+</ResourceDictionary>

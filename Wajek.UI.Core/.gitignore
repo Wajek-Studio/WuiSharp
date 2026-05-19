@@ -1,0 +1,71 @@
+# ==========================
+# Build output
+# ==========================
+bin/
+obj/
+
+# ==========================
+# User-specific files
+# ==========================
+*.user
+*.suo
+*.userprefs
+*.rsuser
+
+# ==========================
+# Visual Studio
+# ==========================
+.vs/
+
+# ==========================
+# Rider / JetBrains
+# ==========================
+.idea/
+*.sln.iml
+
+# ==========================
+# VS Code
+# ==========================
+.vscode/
+
+# ==========================
+# Avalonia preview/cache
+# ==========================
+*.axaml.g.cs
+*.g.cs
+
+# ==========================
+# Logs
+# ==========================
+*.log
+
+# ==========================
+# NuGet
+# ==========================
+packages/
+*.nupkg
+*.snupkg
+
+# keep lock if library reproducibility matters
+# !packages.lock.json
+
+# NuGet local config secrets
+NuGet.Config
+
+# ==========================
+# Publish artifacts
+# ==========================
+publish/
+artifacts/
+
+# ==========================
+# OS generated files
+# ==========================
+.DS_Store
+Thumbs.db
+
+# ==========================
+# Temporary
+# ==========================
+tmp/
+temp/
