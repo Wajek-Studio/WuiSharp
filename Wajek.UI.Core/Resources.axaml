@@ -1,9 +1,15 @@
 <ResourceDictionary xmlns="https://github.com/avaloniaui"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:sys="clr-namespace:System;assembly=System.Runtime">
+                    xmlns:sys="clr-namespace:System;assembly=System.Runtime"
+                    xmlns:converters="clr-namespace:Wajek.UI.Core.Utilities;assembly=Wajek.UI.Core">
     <ResourceDictionary.MergedDictionaries>
         <ResourceInclude Source="avares://Wajek.UI.Core/Resources/Colors.axaml"/>
         <ResourceInclude Source="avares://Wajek.UI.Core/Resources/Icons.axaml"/>
         <ResourceInclude Source="avares://Wajek.UI.Core/Resources/Fonts.axaml"/>
+
+        <ResourceDictionary>
+            <converters:NullableDecimalConverter x:Key="NullableDecimal" />
+            <converters:NullableDateTimeConverter x:Key="NullableDateTime" />
+        </ResourceDictionary>
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
