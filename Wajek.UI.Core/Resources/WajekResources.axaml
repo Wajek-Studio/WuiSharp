@@ -4,5 +4,6 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceInclude Source="avares://Wajek.UI.Core/Resources/Colors.axaml"/>
         <ResourceInclude Source="avares://Wajek.UI.Core/Resources/Icons.axaml"/>
+        <ResourceInclude Source="avares://Wajek.UI.Core/Resources/Fonts.axaml"/>
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>

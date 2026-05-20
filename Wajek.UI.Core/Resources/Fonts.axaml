@@ -1,0 +1,5 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <FontFamily x:Key="Inter">avares://Wajek.UI.Core/Assets/Fonts/Inter#Inter</FontFamily>
+    <FontFamily x:Key="RobotoMono">avares://Wajek.UI.Core/Assets/Fonts/RobotoMono#Roboto Mono</FontFamily>
+</ResourceDictionary>
