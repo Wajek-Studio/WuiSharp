@@ -1,0 +1,46 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style Selector="CheckBox:unchecked /template/ Border#NormalRectangle">
+        <Setter Property="BorderBrush" Value="{StaticResource BorderDarkerBrush}"/>
+        <Setter Property="Background" Value="{StaticResource WindowBackgroundHighBrush}"/>
+    </Style>
+
+    <Style Selector="CheckBox:unchecked:pointerover /template/ Border#NormalRectangle">
+        <Setter Property="BorderBrush" Value="{StaticResource PrimaryBrush}"/>
+        <Setter Property="Background" Value="{StaticResource Shade100}"/>
+    </Style>
+
+    <Style Selector="CheckBox:unchecked:focus /template/ Border#NormalRectangle">
+        <Setter Property="BorderBrush" Value="{StaticResource Shade300}"/>
+        <Setter Property="Background" Value="{StaticResource Shade100}"/>
+    </Style>
+
+    <Style Selector="CheckBox:checked /template/ Border#NormalRectangle">
+        <Setter Property="BorderBrush" Value="{StaticResource PrimaryBrush}"/>
+        <Setter Property="Background" Value="{StaticResource PrimaryBrush}"/>
+    </Style>
+
+    <Style Selector="CheckBox:checked:pointerover /template/ Border#NormalRectangle">
+        <Setter Property="BorderBrush" Value="{StaticResource PrimaryBrush}"/>
+        <Setter Property="Background" Value="{StaticResource Blue300}"/>
+    </Style>
+
+    <Style Selector="CheckBox:checked:focus /template/ Border#NormalRectangle">
+        <Setter Property="BorderBrush" Value="{StaticResource PrimaryBrush}"/>
+        <Setter Property="Background" Value="{StaticResource Blue300}"/>
+    </Style>
+
+    <Style Selector="CheckBox /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Foreground" Value="{StaticResource OnWindowBackgroundBrush}"/>
+    </Style>
+
+    <Style Selector="CheckBox:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Foreground" Value="{StaticResource OnWindowBackgroundBrush}"/>
+    </Style>
+
+    <!-- <Style Selector="CheckBox:pointerover /template/ ContentPresenter#PART_ContentPresenter AccessText">
+        <Setter Property="Foreground" Value="{StaticResource PrimaryTextBrush}"/>
+    </Style> -->
+
+</Styles>

@@ -1,0 +1,84 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style Selector="DataGrid">
+        <Setter Property="Background" Value="{StaticResource WindowBackgroundHighBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource Shade700}"/>
+        <Setter Property="GridLinesVisibility" Value="All"/>
+        <Setter Property="BorderBrush" Value="{StaticResource Shade300}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="HorizontalGridLinesBrush" Value="{StaticResource Shade300}"/>
+        <Setter Property="VerticalGridLinesBrush" Value="{StaticResource Shade300}"/>
+        <Setter Property="SelectionMode" Value="Single"/>
+        <Setter Property="CanUserReorderColumns" Value="False"/>
+        <Setter Property="CanUserResizeColumns" Value="True"/>
+        <Setter Property="CanUserSortColumns" Value="False"/>
+        <Setter Property="AutoGenerateColumns" Value="False"/>
+    </Style>
+
+    <Style Selector="DataGridColumnHeader">
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+        <Setter Property="Background" Value="White"/>
+        <Setter Property="Foreground" Value="{StaticResource Shade900}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource Shade300}"/>
+        <Setter Property="BorderThickness" Value="0,0,0,1"/>
+        <Setter Property="SeparatorBrush" Value="{StaticResource Shade300}"/>
+    </Style>
+
+    <Style Selector="DataGridRow">
+        <Setter Property="Foreground" Value="{StaticResource Shade900}"/>
+        <Setter Property="Opacity" Value="1"/>
+    </Style>
+
+    <Style Selector="DataGridRow:selected /template/ Rectangle#BackgroundRectangle">
+        <Setter Property="Fill" Value="{StaticResource Shade200}"/>
+        <Setter Property="Opacity" Value="1"/>
+    </Style>
+
+    <Style Selector="DataGridRow:selected, DataGridRow:selected">
+        <Setter Property="Foreground" Value="{StaticResource OnWindowBackgroundDarkerBrush}"/>
+    </Style>
+
+    <Style Selector="DataGrid:focus DataGridRow:selected /template/ Rectangle#BackgroundRectangle, 
+        DataGrid:focus-within DataGridRow:selected /template/ Rectangle#BackgroundRectangle">
+        <Setter Property="Fill" Value="{StaticResource PrimaryBrush}"/>
+        <Setter Property="Opacity" Value="1"/>
+    </Style>
+
+    <Style Selector="DataGrid:focus DataGridRow:selected, DataGrid:focus-within DataGridRow:selected">
+        <Setter Property="Foreground" Value="{StaticResource WindowBackgroundHighBrush}"/>
+    </Style>
+
+    <Style Selector="DataGridRow:nth-child(even)">
+        <Setter Property="Background" Value="{StaticResource WindowBackgroundBrush}"/>
+    </Style>
+
+    <Style Selector="DataGridCell.AlignRight">
+        <Setter Property="HorizontalContentAlignment" Value="Right"/>
+    </Style>
+
+    <Style Selector="DataGridColumnHeader">
+        <Setter Property="Padding" Value="12,0,12,0"/>
+    </Style>
+    
+    <Style Selector="DataGridColumnHeader:not(:sortascending):not(:sortdescending) ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Grid.ColumnSpan" Value="2"/>
+    </Style>
+
+    <Style Selector="DataGridColumnHeader.AlignRight">
+        <Setter Property="HorizontalContentAlignment" Value="Right"/>
+    </Style>
+
+    <Style Selector="DataGridRow:selected DataGridCell TextBox">
+        <Setter Property="Height" Value="32" />
+        <Setter Property="CornerRadius" Value="0" />
+    </Style>
+    
+    <Style Selector="DataGridRowGroupHeader">
+        <Setter Property="Background" Value="{StaticResource DataGridRowGroupHeaderBackgroundBrush}"/>
+        <Setter Property="Foreground" Value="{StaticResource DataGridRowGroupHeaderForegroundBrush}"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+    </Style>
+
+</Styles>

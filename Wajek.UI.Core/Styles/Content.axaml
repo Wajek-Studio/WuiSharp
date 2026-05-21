@@ -1,0 +1,16 @@
+<Styles xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:wui="clr-namespace:Wajek.UI.Core.Controls">
+
+  <Style Selector="wui|WuiContent">
+    <Setter Property="Padding" Value="16,24"/>
+    <Setter Property="Template">
+      <ControlTemplate>
+        <ContentPresenter 
+            Padding="{TemplateBinding Padding}"
+            Content="{TemplateBinding Content}"/>
+      </ControlTemplate>
+    </Setter>
+  </Style>
+
+</Styles>

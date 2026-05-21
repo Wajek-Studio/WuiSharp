@@ -1,0 +1,69 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:wui="using:Wajek.UI.Core.Controls">
+
+    <Style Selector="wui|WuiHeader">
+        <Setter Property="Padding" Value="16"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource Shade300}"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Template">
+            <ControlTemplate>
+                <Border Padding="{TemplateBinding Padding}" 
+                        BorderThickness="{TemplateBinding BorderThickness}" 
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        Background="{TemplateBinding Background}">
+                    <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="16" 
+                          VerticalAlignment="Center">
+                        <Border x:Name="PART_HeaderIconOuter" Grid.Column="0" 
+                                Width="36" Height="36" CornerRadius="18" 
+                                Background="{DynamicResource PrimaryBrush}">
+                            <TextBlock x:Name="PART_HeaderIcon" Classes="Icon" Text="{TemplateBinding Icon}"/>
+                        </Border>
+                        <StackPanel Grid.Column="1" Orientation="Vertical" 
+                                    VerticalAlignment="Center">
+                            <TextBlock x:Name="PART_HeaderTitle"
+                                       Text="{TemplateBinding Title}"
+                                       VerticalAlignment="Center"
+                                       FontSize="16" 
+                                       FontFamily="{DynamicResource Inter}" 
+                                       FontWeight="SemiBold"/>
+                            <TextBlock x:Name="PART_HeaderDescription" 
+                                       IsVisible="{TemplateBinding HasDescription}"
+                                       Text="{TemplateBinding Description}" 
+                                       TextWrapping="Wrap"/>
+                        </StackPanel>
+                        <ContentPresenter Grid.Column="2" Content="{TemplateBinding Content}"/>
+                    </Grid>
+                </Border>
+            </ControlTemplate>
+        </Setter>
+    </Style>
+
+    <Style Selector="wui|WuiHeader TextBlock#PART_HeaderIcon">
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="{DynamicResource OnPrimaryBrush}"/>
+    </Style>
+
+    <Style Selector="wui|WuiHeader.Primary">
+        <Setter Property="Background" Value="{DynamicResource PrimaryBrush}" />
+    </Style>
+
+    <Style Selector="wui|WuiHeader.Primary Border#PART_HeaderIconOuter">
+        <Setter Property="Background" Value="{DynamicResource OnPrimaryBrush}" />
+    </Style>
+
+    <Style Selector="wui|WuiHeader.Primary TextBlock#PART_HeaderIcon">
+        <Setter Property="Foreground" Value="{DynamicResource PrimaryBrush}" />
+    </Style>
+
+    <Style Selector="wui|WuiHeader.Primary TextBlock#PART_HeaderTitle">
+        <Setter Property="Foreground" Value="{DynamicResource OnPrimaryBrush}" />
+    </Style>
+
+    <Style Selector="wui|WuiHeader.Primary TextBlock#PART_HeaderDescription">
+        <Setter Property="Foreground" Value="{DynamicResource Shade200}" />
+    </Style>
+
+</Styles>

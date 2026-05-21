@@ -1,0 +1,72 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style Selector="TimePicker">
+        <Setter Property="Margin" Value="-4"/>
+        <Setter Property="Padding" Value="4"/>
+        <Setter Property="Height" Value="42"/>
+    </Style>
+
+    <Style Selector="TimePicker:hasnotime /template/ TextBlock#PART_HourTextBlock,
+                     TimePicker:hasnotime /template/ TextBlock#PART_MinuteTextBlock,
+                     TimePicker:hasnotime /template/ TextBlock#PART_SecondTextBlock,
+                     TimePicker:hasnotime /template/ TextBlock#PART_PeriodTextBlock">
+        <Setter Property="Foreground" Value="{StaticResource OnWindowBackgroundBrush}"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+
+    <Style Selector="TimePicker /template/ TextBlock#PART_HourTextBlock,
+                     TimePicker /template/ TextBlock#PART_MinuteTextBlock,
+                     TimePicker /template/ TextBlock#PART_SecondTextBlock,
+                     TimePicker /template/ TextBlock#PART_PeriodTextBlock">
+        <Setter Property="Foreground" Value="{StaticResource OnWindowBackgroundBrush}"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+
+    <Style Selector="TimePickerPresenter /template/ Button#PART_AcceptButton, 
+                     TimePickerPresenter /template/ Button#PART_DismissButton">
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+    </Style>
+
+    <Style Selector="TimePickerPresenter /template/ Button#PART_AcceptButton /template/ Border#PART_Outer, 
+                     TimePickerPresenter /template/ Button#PART_DismissButton /template/ Border#PART_Outer">
+        <Setter Property="Background" Value="Transparent"/>
+    </Style>
+
+    <Style Selector="TimePickerPresenter /template/ Button#PART_AcceptButton /template/ ContentPresenter#PART_ContentPresenter, 
+                     TimePickerPresenter /template/ Button#PART_DismissButton /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Background" Value="{DynamicResource DateTimePickerFlyoutButtonBackground}"/>
+        <Setter Property="BorderThickness" Value="{DynamicResource DateTimeFlyoutButtonBorderThickness}"/>
+    </Style>
+
+    <Style Selector="TimePickerPresenter /template/ Button#PART_AcceptButton:pointerover /template/ ContentPresenter#PART_ContentPresenter,
+                     TimePickerPresenter /template/ Button#PART_DismissButton:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Background" Value="{DynamicResource DateTimePickerFlyoutButtonBackgroundPointerOver}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource DateTimePickerFlyoutButtonBorderBrushPointerOver}"/>
+        <Setter Property="Foreground" Value="{DynamicResource DateTimePickerFlyoutButtonForegroundPointerOver}"/>
+    </Style>
+
+    <Style Selector="TimePickerPresenter /template/ Button#PART_AcceptButton:focus /template/ Border#PART_Outer, 
+                     TimePickerPresenter /template/ Button#PART_AcceptButton:focus-visible /template/ Border#PART_Outer, 
+                     TimePickerPresenter /template/ Button#PART_DismissButton:focus /template/ Border#PART_Outer,
+                     TimePickerPresenter /template/ Button#PART_DismissButton:focus-visible /template/ Border#PART_Outer">
+        <Setter Property="Background" Value="Transparent"/>
+    </Style>
+
+    <Style Selector="TimePickerPresenter /template/ Button#PART_AcceptButton:focus /template/ ContentPresenter#PART_ContentPresenter,
+                     TimePickerPresenter /template/ Button#PART_AcceptButton:focus-visible /template/ ContentPresenter#PART_ContentPresenter,
+                     TimePickerPresenter /template/ Button#PART_DismissButton:focus /template/ ContentPresenter#PART_ContentPresenter,
+                     TimePickerPresenter /template/ Button#PART_DismissButton:focus-visible /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Background" Value="{DynamicResource DateTimePickerFlyoutButtonBackground}"/>
+        <Setter Property="BorderThickness" Value="{DynamicResource DateTimeFlyoutButtonBorderThickness}"/>
+    </Style>
+
+    <Style Selector="TimePickerPresenter /template/ Button#PART_AcceptButton:pressed /template/ ContentPresenter#PART_ContentPresenter,
+                     TimePickerPresenter /template/ Button#PART_DismissButton:pressed /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Background" Value="{DynamicResource DateTimePickerFlyoutButtonBackgroundPressed}"/>
+        <Setter Property="BorderBrush" Value="{DynamicResource DateTimePickerFlyoutButtonBorderBrushPressed}"/>
+        <Setter Property="Foreground" Value="{DynamicResource DateTimePickerFlyoutButtonForegroundPressed}"/>
+    </Style>
+
+</Styles>
