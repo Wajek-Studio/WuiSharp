@@ -2,4 +2,5 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
     <FontFamily x:Key="Inter">avares://Wajek.UI.Core/Assets/Fonts/Inter#Inter</FontFamily>
     <FontFamily x:Key="RobotoMono">avares://Wajek.UI.Core/Assets/Fonts/RobotoMono#Roboto Mono</FontFamily>
+    <FontFamily x:Key="MaterialSymbolsOutlined">avares://Wajek.UI.Core/Assets/Fonts/material_icon_outlined.ttf#Material Symbols Outlined</FontFamily>
 </ResourceDictionary>

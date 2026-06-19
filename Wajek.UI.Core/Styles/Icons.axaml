@@ -3,7 +3,7 @@
         xmlns:wui="clr-namespace:Wajek.UI.Core.Controls">
 
     <Style Selector="TextBlock.Icon">
-        <Setter Property="FontFamily" Value="avares://Wajek.UI.Core/Assets/Fonts/material_icons_filled.ttf#Material Symbols Rounded"/>
+        <Setter Property="FontFamily" Value="{StaticResource MaterialSymbolsOutlined}"/>
         <Setter Property="FontSize" Value="24"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
     </Style>
