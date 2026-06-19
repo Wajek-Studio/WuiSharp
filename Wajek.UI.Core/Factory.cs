@@ -58,6 +58,8 @@ public class Factory(IServiceProvider provider) {
     }
 
     private void AddWindow<TViewModel, TParam>(WindowBase window, TViewModel viewModel, TParam param) {
+        window.DataContext = viewModel;
+
         if (window.DataContext is IInitializableWithParamAsync<TParam> vmInitializableAsync) {
             window.Loaded += async (s, e) => {
                 await vmInitializableAsync.InitializeAsync(param);
@@ -70,7 +72,11 @@ public class Factory(IServiceProvider provider) {
             };
         }
 
-        AddWindow(window, viewModel);
+        window.Closed += (_, _) => {
+            _windows.Remove(window);
+        };
+
+        _windows.Add(window);
     }
 
     public WindowBase CreateWindow<TViewModel, TParam>(TParam param) where TViewModel : notnull
