@@ -109,6 +109,16 @@
     <SolidColorBrush x:Key="PrimaryBrush08" Color="{StaticResource Primary}" Opacity="0.8"/>
     <SolidColorBrush x:Key="PrimaryBrush09" Color="{StaticResource Primary}" Opacity="0.9"/>
 
+    <SolidColorBrush x:Key="ErrorBrush01" Color="{StaticResource Error}" Opacity="0.1"/>
+    <SolidColorBrush x:Key="ErrorBrush02" Color="{StaticResource Error}" Opacity="0.2"/>
+    <SolidColorBrush x:Key="ErrorBrush03" Color="{StaticResource Error}" Opacity="0.3"/>
+    <SolidColorBrush x:Key="ErrorBrush04" Color="{StaticResource Error}" Opacity="0.4"/>
+    <SolidColorBrush x:Key="ErrorBrush05" Color="{StaticResource Error}" Opacity="0.5"/>
+    <SolidColorBrush x:Key="ErrorBrush06" Color="{StaticResource Error}" Opacity="0.6"/>
+    <SolidColorBrush x:Key="ErrorBrush07" Color="{StaticResource Error}" Opacity="0.7"/>
+    <SolidColorBrush x:Key="ErrorBrush08" Color="{StaticResource Error}" Opacity="0.8"/>
+    <SolidColorBrush x:Key="ErrorBrush09" Color="{StaticResource Error}" Opacity="0.9"/>
+
     <!-- Primary Brushes -->
     <SolidColorBrush x:Key="PrimaryBrush" Color="{StaticResource Primary}"/>
     <SolidColorBrush x:Key="Primary100Brush" Color="{StaticResource Primary100}"/>

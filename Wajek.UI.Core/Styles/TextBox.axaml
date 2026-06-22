@@ -10,7 +10,7 @@
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="CornerRadius" Value="6"/>
         <Setter Property="BorderBrush" Value="{StaticResource Shade300}"/>
-        <Setter Property="Height" Value="44"/>
+        <Setter Property="MinHeight" Value="44"/>
         <Setter Property="Padding" Value="10,0"/>
         <Setter Property="FontSize" Value="14"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
@@ -151,6 +151,22 @@
         <Setter Property="Background" Value="{StaticResource Shade200}"/>
         <Setter Property="BorderBrush" Value="{StaticResource Shade300}"/>
         <Setter Property="BorderThickness" Value="1"/>
+    </Style>
+
+    <Style Selector="TextBox:error /template/ Border#PART_BorderElement">
+        <Setter Property="BorderBrush" Value="{StaticResource ErrorBrush}"/>
+    </Style>
+
+    <Style Selector="TextBox:error:focus /template/ Border#PART_Outer, TextBox:error:focus-visible /template/ Border#PART_Outer">
+        <Setter Property="Background" Value="{StaticResource ErrorBrush03}"/>
+    </Style>
+
+    <Style Selector="TextBox:error /template/ DataValidationErrors ItemsControl ContentPresenter TextBlock">
+        <Setter Property="Foreground" Value="{StaticResource ErrorBrush}"/>
+    </Style>
+
+    <Style Selector="TextBox:error /template/ DataValidationErrors ItemsControl ContentPresenter">
+        <Setter Property="Padding" Value="4,0,4,0"/>
     </Style>
 
 </Styles>
