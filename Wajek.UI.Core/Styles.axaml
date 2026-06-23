@@ -1,15 +1,16 @@
 <Styles xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
+    <StyleInclude Source="avares://Wajek.UI.Core/Controls/Header/Header.axaml"/>
+    <StyleInclude Source="avares://Wajek.UI.Core/Controls/Footer/Footer.axaml"/>
+
     <StyleInclude Source="avares://Wajek.UI.Core/Styles/Buttons.axaml"/> 
     <StyleInclude Source="avares://Wajek.UI.Core/Styles/CheckBox.axaml"/>    
     <StyleInclude Source="avares://Wajek.UI.Core/Styles/ComboBox.axaml"/>
     <StyleInclude Source="avares://Wajek.UI.Core/Styles/Content.axaml"/>
     <StyleInclude Source="avares://Wajek.UI.Core/Styles/DataGrid.axaml"/>
     <StyleInclude Source="avares://Wajek.UI.Core/Styles/DatePicker.axaml"/>
-    <StyleInclude Source="avares://Wajek.UI.Core/Styles/Footer.axaml"/>
     <StyleInclude Source="avares://Wajek.UI.Core/Styles/Forms.axaml"/>
-    <StyleInclude Source="avares://Wajek.UI.Core/Styles/Header.axaml"/>
     <StyleInclude Source="avares://Wajek.UI.Core/Styles/Icons.axaml"/>
     <StyleInclude Source="avares://Wajek.UI.Core/Styles/MainMenu.axaml"/>
     <StyleInclude Source="avares://Wajek.UI.Core/Styles/TextBox.axaml"/>

@@ -10,7 +10,7 @@
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="CornerRadius" Value="6"/>
         <Setter Property="BorderBrush" Value="{StaticResource Shade300}"/>
-        <Setter Property="MinHeight" Value="44"/>
+        <Setter Property="MinHeight" Value="36"/>
         <Setter Property="Padding" Value="10,0"/>
         <Setter Property="FontSize" Value="14"/>
         <Setter Property="VerticalAlignment" Value="Center"/>

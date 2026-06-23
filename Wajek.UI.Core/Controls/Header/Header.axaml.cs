@@ -4,20 +4,20 @@ using Avalonia.Controls;
 
 namespace Wajek.UI.Core.Controls;
 
-public partial class WuiHeader : ContentControl, INotifyPropertyChanged
+public partial class Header : ContentControl, INotifyPropertyChanged
 {
     public static readonly StyledProperty<string> TitleProperty =
-        AvaloniaProperty.Register<WuiHeader, string>(nameof(Title));
+        AvaloniaProperty.Register<Header, string>(nameof(Title));
 
     public static readonly StyledProperty<string> DescriptionProperty =
-        AvaloniaProperty.Register<WuiHeader, string>(nameof(Description),
+        AvaloniaProperty.Register<Header, string>(nameof(Description),
         defaultValue: string.Empty);
 
     public static readonly StyledProperty<string> IconProperty =
-        AvaloniaProperty.Register<WuiHeader, string>(nameof(Icon));
+        AvaloniaProperty.Register<Header, string>(nameof(Icon));
 
     public static readonly StyledProperty<bool> HasDescriptionProperty =
-        AvaloniaProperty.Register<WuiHeader, bool>(nameof(HasDescription));
+        AvaloniaProperty.Register<Header, bool>(nameof(HasDescription));
 
     public string Title
     {

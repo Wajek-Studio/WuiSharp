@@ -2,7 +2,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:wui="using:Wajek.UI.Core.Controls">
 
-    <Style Selector="wui|WuiHeader">
+    <Style Selector="wui|Header">
         <Setter Property="Padding" Value="16"/>
         <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="BorderBrush" Value="{DynamicResource Shade300}"/>
@@ -40,29 +40,29 @@
         </Setter>
     </Style>
 
-    <Style Selector="wui|WuiHeader TextBlock#PART_HeaderIcon">
+    <Style Selector="wui|Header TextBlock#PART_HeaderIcon">
         <Setter Property="VerticalAlignment" Value="Center"/>
         <Setter Property="HorizontalAlignment" Value="Center"/>
         <Setter Property="Foreground" Value="{DynamicResource OnPrimaryBrush}"/>
     </Style>
 
-    <Style Selector="wui|WuiHeader.Primary">
+    <Style Selector="wui|Header.Primary">
         <Setter Property="Background" Value="{DynamicResource PrimaryBrush}" />
     </Style>
 
-    <Style Selector="wui|WuiHeader.Primary Border#PART_HeaderIconOuter">
+    <Style Selector="wui|Header.Primary Border#PART_HeaderIconOuter">
         <Setter Property="Background" Value="{DynamicResource OnPrimaryBrush}" />
     </Style>
 
-    <Style Selector="wui|WuiHeader.Primary TextBlock#PART_HeaderIcon">
+    <Style Selector="wui|Header.Primary TextBlock#PART_HeaderIcon">
         <Setter Property="Foreground" Value="{DynamicResource PrimaryBrush}" />
     </Style>
 
-    <Style Selector="wui|WuiHeader.Primary TextBlock#PART_HeaderTitle">
+    <Style Selector="wui|Header.Primary TextBlock#PART_HeaderTitle">
         <Setter Property="Foreground" Value="{DynamicResource OnPrimaryBrush}" />
     </Style>
 
-    <Style Selector="wui|WuiHeader.Primary TextBlock#PART_HeaderDescription">
+    <Style Selector="wui|Header.Primary TextBlock#PART_HeaderDescription">
         <Setter Property="Foreground" Value="{DynamicResource Shade200}" />
     </Style>
 
