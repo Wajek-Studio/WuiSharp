@@ -10,7 +10,7 @@
         <Setter Property="Foreground" Value="{StaticResource OnWindowBackgroundDarkerBrush}"/>
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="BorderBrush" Value="{StaticResource Shade300}"/>
-        <Setter Property="Height" Value="44"/>
+        <Setter Property="MinHeight" Value="36"/>
         <Setter Property="Padding" Value="10,0"/>
         <Setter Property="FontSize" Value="14"/>
         <Setter Property="CornerRadius" Value="6"/>
@@ -130,6 +130,7 @@
         <Setter Property="CornerRadius" Value="10"/>
         <Setter Property="Background" Value="Transparent"/>
         <Setter Property="Padding" Value="4"/>
+        <Setter Property="MinHeight" Value="44"/>
     </Style>
 
     <Style Selector="ComboBox:pointerover">
@@ -175,5 +176,21 @@
     <Style Selector="ComboBoxItem:focus /template/ ContentPresenter#PART_ContentPresenter">
         <Setter Property="Foreground" Value="{DynamicResource SystemControlHighlightAltBaseHighBrush}"/>
         <Setter Property="Background" Value="{DynamicResource SystemControlHighlightListAccentLowBrush}"/>
+    </Style>
+
+    <Style Selector="ComboBox:error /template/ Border#Background">
+        <Setter Property="BorderBrush" Value="{StaticResource ErrorBrush}"/>
+    </Style>
+
+    <Style Selector="ComboBox:error:focus /template/ Border#PART_Outer, ComboBox:error:focus-visible /template/ Border#PART_Outer">
+        <Setter Property="Background" Value="{StaticResource ErrorBrush03}"/>
+    </Style>
+
+    <Style Selector="ComboBox:error /template/ DataValidationErrors ItemsControl ContentPresenter TextBlock">
+        <Setter Property="Foreground" Value="{StaticResource ErrorBrush}"/>
+    </Style>
+
+    <Style Selector="ComboBox:error /template/ DataValidationErrors ItemsControl ContentPresenter">
+        <Setter Property="Padding" Value="4,0,4,0"/>
     </Style>
 </Styles>

@@ -3,11 +3,11 @@
 
     <StyleInclude Source="avares://Wajek.UI.Core/Controls/Header/Header.axaml"/>
     <StyleInclude Source="avares://Wajek.UI.Core/Controls/Footer/Footer.axaml"/>
+    <StyleInclude Source="avares://Wajek.UI.Core/Controls/Content/Content.axaml"/>
 
     <StyleInclude Source="avares://Wajek.UI.Core/Styles/Buttons.axaml"/> 
     <StyleInclude Source="avares://Wajek.UI.Core/Styles/CheckBox.axaml"/>    
     <StyleInclude Source="avares://Wajek.UI.Core/Styles/ComboBox.axaml"/>
-    <StyleInclude Source="avares://Wajek.UI.Core/Styles/Content.axaml"/>
     <StyleInclude Source="avares://Wajek.UI.Core/Styles/DataGrid.axaml"/>
     <StyleInclude Source="avares://Wajek.UI.Core/Styles/DatePicker.axaml"/>
     <StyleInclude Source="avares://Wajek.UI.Core/Styles/Forms.axaml"/>
