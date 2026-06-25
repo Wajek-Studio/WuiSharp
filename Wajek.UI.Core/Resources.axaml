@@ -10,6 +10,7 @@
         <ResourceDictionary>
             <converters:NullableDecimalConverter x:Key="NullableDecimal" />
             <converters:NullableDateTimeConverter x:Key="NullableDateTime" />
+            <converters:NullableIntegerConverter x:Key="NullableInteger" />
         </ResourceDictionary>
     </ResourceDictionary.MergedDictionaries>
 </ResourceDictionary>
