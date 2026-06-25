@@ -19,14 +19,15 @@ public class NullableDecimalConverter : IValueConverter {
     public object? ConvertBack(object? value, Type targetType,
         object? parameter, CultureInfo culture) {
         var text = value?.ToString();
+        var isNullable = !targetType.IsValueType || Nullable.GetUnderlyingType(targetType) != null;
 
-        if (string.IsNullOrWhiteSpace(text)) return null;
+        if (string.IsNullOrWhiteSpace(text)) return isNullable ? null : 0m;
 
         return decimal.TryParse(
             text, 
             NumberStyles.AllowDecimalPoint | NumberStyles.AllowLeadingSign | NumberStyles.AllowThousands,
             culture,
             out var result
-        ) ? result : AvaloniaProperty.UnsetValue;
+        ) ? result : (isNullable ? null : 0m);
     }
 }
