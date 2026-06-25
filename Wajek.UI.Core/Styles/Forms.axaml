@@ -5,7 +5,7 @@
         <Setter Property="Margin" Value="0,0,0,8"/>
     </Style>
 
-    <Style Selector="StackPanel.FormField, Border.FormField">
+    <Style Selector="StackPanel.FormField, Border.FormField, Grid.FormField">
         <Setter Property="Margin" Value="0,0,0,16"/>
     </Style>
 
