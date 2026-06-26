@@ -2,7 +2,7 @@ using System;
 using System.Globalization;
 using Avalonia.Data.Converters;
 
-namespace Wajek.UI.Core.Utilities;
+namespace Wajek.UI.Core.Converters;
 
 public class NullableIntegerConverter : IValueConverter {
     public object Convert(
