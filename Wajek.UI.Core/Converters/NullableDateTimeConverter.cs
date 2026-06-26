@@ -2,7 +2,7 @@ using System;
 using System.Globalization;
 using Avalonia.Data.Converters;
 
-namespace Wajek.UI.Core.Utilities;
+namespace Wajek.UI.Core.Converters;
 
 public class NullableDateTimeConverter : IValueConverter {
     public object Convert(object? value, Type targetType, object? parameter, CultureInfo culture) {

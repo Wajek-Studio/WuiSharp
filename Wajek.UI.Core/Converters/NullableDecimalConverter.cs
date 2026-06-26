@@ -3,7 +3,7 @@ using System.Globalization;
 using Avalonia;
 using Avalonia.Data.Converters;
 
-namespace Wajek.UI.Core.Utilities;
+namespace Wajek.UI.Core.Converters;
 
 public class NullableDecimalConverter : IValueConverter {
     public object Convert(
