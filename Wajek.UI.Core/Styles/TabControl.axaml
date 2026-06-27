@@ -1,0 +1,60 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Style Selector="TabControl /template/ Border DockPanel ItemsPresenter#PART_ItemsPresenter WrapPanel">
+        <Setter Property="Background" Value="{StaticResource Shade200}"/>
+    </Style>
+
+    <Style Selector="TabControl /template/ Border DockPanel ItemsPresenter">
+        <Setter Property="Margin" Value="0,0,0,0"/>
+    </Style>
+
+    <Style Selector="TabControl">
+        <Setter Property="Padding" Value="0"/>
+    </Style>
+
+    <Style Selector="TabControl TabItem">
+        <Setter Property="Padding" Value="16,0,16,0"/>
+    </Style>
+
+    <Style Selector="TabControl TabItem /template/ Border#PART_LayoutRoot Panel Border#PART_SelectedPipe">
+        <Setter Property="Height" Value="0"/>
+        <Setter Property="MinHeight" Value="0"/>
+        <Setter Property="Opacity" Value="0"/>
+    </Style>
+
+    <Style Selector="TabControl TabItem /template/ Border#PART_LayoutRoot Panel ContentPresenter#PART_ContentPresenter">
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+        <Setter Property="Foreground" Value="{StaticResource Shade800}"/>
+    </Style>
+
+    <Style Selector="TabControl TabItem">
+        <Setter Property="MinHeight" Value="40"/>
+        <Setter Property="Margin" Value="0,8,0,0"/>
+    </Style>
+
+    <Style Selector="TabControl TabItem:nth-child(1)">
+        <Setter Property="Margin" Value="8,8,0,0"/>
+    </Style>
+
+    <Style Selector="TabControl TabItem:nth-last-child(1)">
+        <Setter Property="Margin" Value="0,8,8,0"/>
+    </Style>
+
+    <Style Selector="TabControl TabItem:nth-child(1):nth-last-child(1)">
+        <Setter Property="Margin" Value="8,8,8,0"/>
+    </Style>
+
+    <Style Selector="TabControl TabItem:selected /template/ Border#PART_LayoutRoot">
+        <Setter Property="Background" Value="{StaticResource Surface}"/>
+        <Setter Property="CornerRadius" Value="4, 4, 0, 0"/>
+    </Style>
+
+    <Style Selector="TabControl TabItem:selected /template/ Border#PART_LayoutRoot Panel ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Foreground" Value="{StaticResource OnSurface}"/>
+    </Style>
+
+    
+
+</Styles>

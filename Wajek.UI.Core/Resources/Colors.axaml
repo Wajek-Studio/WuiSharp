@@ -30,6 +30,10 @@
     <Color x:Key="Shade700Color">#595959</Color>
     <Color x:Key="Shade800Color">#404040</Color>
     <Color x:Key="Shade900Color">#262626</Color>
+    
+    <!-- Basic Colors -->
+    <Color x:Key="Surface">#F5F5F5</Color>
+    <Color x:Key="OnSurface">#222222</Color>
 
     <!-- Primary Colors -->
     <Color x:Key="Primary">#1976D2</Color>

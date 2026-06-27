@@ -16,4 +16,6 @@
     <StyleInclude Source="avares://Wajek.UI.Core/Styles/TextBox.axaml"/>
     <StyleInclude Source="avares://Wajek.UI.Core/Styles/TimePicker.axaml"/>
     <StyleInclude Source="avares://Wajek.UI.Core/Styles/Window.axaml"/> 
+
+    <StyleInclude Source="avares://Wajek.UI.Core/Styles/TabControl.axaml"/> 
 </Styles>
