@@ -1,0 +1,12 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <Style Selector="Border.Box">
+        <Setter Property="Background" Value="{StaticResource WindowBackgroundHighBrush}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="BorderBrush" Value="{StaticResource Shade200}"/>
+        <Setter Property="Padding" Value="16"/>
+        <Setter Property="CornerRadius" Value="8"/>
+    </Style>
+
+</Styles>

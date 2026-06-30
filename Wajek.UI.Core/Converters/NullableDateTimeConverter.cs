@@ -18,6 +18,9 @@ public class NullableDateTimeConverter : IValueConverter {
 
             DateTimeOffset dto => dto.ToString(format, culture),
 
+            DateOnly d when d == default => string.Empty,
+            DateOnly d => d.ToString(format, culture),
+
             _ => string.Empty
         };
     }
@@ -26,13 +29,28 @@ public class NullableDateTimeConverter : IValueConverter {
         if (value is null || string.IsNullOrWhiteSpace(value.ToString()))
             return null;
 
-        if (DateTime.TryParse(
-                value.ToString(),
-                culture,
-                DateTimeStyles.None,
-                out var result))
+        var text = value.ToString()!;
+        var underlyingType = Nullable.GetUnderlyingType(targetType) ?? targetType;
+
+        if (underlyingType == typeof(DateOnly))
         {
-            return result;
+            return DateOnly.TryParse(text, culture, DateTimeStyles.None, out var d)
+                ? d
+                : null;
+        }
+
+        if (underlyingType == typeof(DateTime))
+        {
+            return DateTime.TryParse(text, culture, DateTimeStyles.None, out var dt)
+                ? dt
+                : null;
+        }
+
+        if (underlyingType == typeof(DateTimeOffset))
+        {
+            return DateTimeOffset.TryParse(text, culture, DateTimeStyles.None, out var dto)
+                ? dto
+                : null;
         }
 
         return null;

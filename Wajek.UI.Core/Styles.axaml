@@ -18,4 +18,5 @@
     <StyleInclude Source="avares://Wajek.UI.Core/Styles/Window.axaml"/> 
 
     <StyleInclude Source="avares://Wajek.UI.Core/Styles/TabControl.axaml"/> 
+    <StyleInclude Source="avares://Wajek.UI.Core/Styles/Box.axaml"/> 
 </Styles>
