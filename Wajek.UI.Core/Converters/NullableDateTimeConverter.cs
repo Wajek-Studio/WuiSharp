@@ -9,14 +9,17 @@ public class NullableDateTimeConverter : IValueConverter {
         if (value is null)
             return string.Empty;
 
-        var format = parameter as string ?? "yyyy-MM-dd HH:mm:ss";
+        var format = parameter as string;
 
         return value switch
         {
             DateTime dt when dt == default => string.Empty,
-            DateTime dt => dt.ToString(format, culture),
+            DateTime dt => dt.ToString(format ?? "yyyy-MM-dd HH:mm:ss", culture),
 
-            DateTimeOffset dto => dto.ToString(format, culture),
+            DateTimeOffset dto => dto.ToString(format ?? "yyyy-MM-dd HH:mm:ss", culture),
+
+            DateOnly doVal when doVal == default => string.Empty,
+            DateOnly doVal => doVal.ToString(format ?? "yyyy-MM-dd", culture),
 
             _ => string.Empty
         };
@@ -26,13 +29,22 @@ public class NullableDateTimeConverter : IValueConverter {
         if (value is null || string.IsNullOrWhiteSpace(value.ToString()))
             return null;
 
-        if (DateTime.TryParse(
-                value.ToString(),
-                culture,
-                DateTimeStyles.None,
-                out var result))
+        var strValue = value.ToString();
+
+        if (targetType == typeof(DateOnly) || targetType == typeof(DateOnly?))
         {
-            return result;
+            if (DateOnly.TryParse(strValue, culture, DateTimeStyles.None, out var doResult))
+                return doResult;
+        }
+        else if (targetType == typeof(DateTimeOffset) || targetType == typeof(DateTimeOffset?))
+        {
+            if (DateTimeOffset.TryParse(strValue, culture, DateTimeStyles.None, out var dtoResult))
+                return dtoResult;
+        }
+        else
+        {
+            if (DateTime.TryParse(strValue, culture, DateTimeStyles.None, out var dtResult))
+                return dtResult;
         }
 
         return null;
