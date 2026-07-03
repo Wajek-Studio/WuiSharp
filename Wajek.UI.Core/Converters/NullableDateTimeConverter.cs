@@ -9,17 +9,14 @@ public class NullableDateTimeConverter : IValueConverter {
         if (value is null)
             return string.Empty;
 
-        var format = parameter as string;
+        var format = parameter as string ?? "yyyy-MM-dd HH:mm:ss";
 
         return value switch
         {
             DateTime dt when dt == default => string.Empty,
-            DateTime dt => dt.ToString(format ?? "yyyy-MM-dd HH:mm:ss", culture),
+            DateTime dt => dt.ToString(format, culture),
 
-            DateTimeOffset dto => dto.ToString(format ?? "yyyy-MM-dd HH:mm:ss", culture),
-
-            DateOnly doVal when doVal == default => string.Empty,
-            DateOnly doVal => doVal.ToString(format ?? "yyyy-MM-dd", culture),
+            DateTimeOffset dto => dto.ToString(format, culture),
 
             DateOnly d when d == default => string.Empty,
             DateOnly d => d.ToString(format, culture),
