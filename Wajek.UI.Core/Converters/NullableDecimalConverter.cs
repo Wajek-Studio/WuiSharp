@@ -5,26 +5,29 @@ using Avalonia.Data.Converters;
 
 namespace Wajek.UI.Core.Converters;
 
-public class NullableDecimalConverter : IValueConverter {
+public class NullableDecimalConverter : IValueConverter
+{
     public object Convert(
         object? value, Type targetType,
         object? parameter, CultureInfo culture
-    ) {
-        if(value is null) return "";
+    )
+    {
+        if (value is null) return "";
         return value is decimal d
             ? d.ToString("N0", culture)
             : "";
     }
 
     public object? ConvertBack(object? value, Type targetType,
-        object? parameter, CultureInfo culture) {
+        object? parameter, CultureInfo culture)
+    {
         var text = value?.ToString();
         var isNullable = !targetType.IsValueType || Nullable.GetUnderlyingType(targetType) != null;
 
         if (string.IsNullOrWhiteSpace(text)) return isNullable ? null : 0m;
 
         return decimal.TryParse(
-            text, 
+            text,
             NumberStyles.AllowDecimalPoint | NumberStyles.AllowLeadingSign | NumberStyles.AllowThousands,
             culture,
             out var result

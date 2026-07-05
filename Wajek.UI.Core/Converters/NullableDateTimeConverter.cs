@@ -4,8 +4,10 @@ using Avalonia.Data.Converters;
 
 namespace Wajek.UI.Core.Converters;
 
-public class NullableDateTimeConverter : IValueConverter {
-    public object Convert(object? value, Type targetType, object? parameter, CultureInfo culture) {
+public class NullableDateTimeConverter : IValueConverter
+{
+    public object Convert(object? value, Type targetType, object? parameter, CultureInfo culture)
+    {
         if (value is null)
             return string.Empty;
 
@@ -25,7 +27,8 @@ public class NullableDateTimeConverter : IValueConverter {
         };
     }
 
-    public object? ConvertBack(object? value, Type targetType, object? parameter, CultureInfo culture) {
+    public object? ConvertBack(object? value, Type targetType, object? parameter, CultureInfo culture)
+    {
         if (value is null || string.IsNullOrWhiteSpace(value.ToString()))
             return null;
 

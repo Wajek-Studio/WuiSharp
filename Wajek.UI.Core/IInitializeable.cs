@@ -1,17 +1,21 @@
 namespace Wajek.UI.Core;
 
-public interface IInitializableAsync {
+public interface IInitializableAsync
+{
     Task InitializeAsync();
 }
 
-public interface IInitializable {
+public interface IInitializable
+{
     void Initialize();
 }
 
-public interface IInitializableWithParamAsync<TParam> {
+public interface IInitializableWithParamAsync<TParam>
+{
     Task InitializeAsync(TParam param);
 }
 
-public interface IInitializableWithParam<TParam> {
+public interface IInitializableWithParam<TParam>
+{
     void Initialize(TParam param);
 }
