@@ -119,6 +119,35 @@
         <Setter Property="Foreground" Value="{StaticResource Shade100}"/>
     </Style>
 
+    <Style Selector="Button.Danger /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Background" Value="{StaticResource Error}"/>
+        <Setter Property="BorderBrush" Value="#D32F2F"/>
+        <Setter Property="Foreground" Value="White"/>
+    </Style>
+
+    <Style Selector="Button.Danger:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Background" Value="#D32F2F"/>
+        <Setter Property="BorderBrush" Value="#C62828"/>
+        <Setter Property="Foreground" Value="White"/>
+    </Style>
+
+    <Style Selector="Button.Danger:pressed /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="BorderBrush" Value="#B71C1C"/>
+        <Setter Property="Background" Value="#C62828"/>
+        <Setter Property="Foreground" Value="White"/>
+    </Style>
+
+    <Style Selector="Button.Danger:focus /template/ Border#PART_Outer, 
+                     Button.Danger:focus-visible /template/ Border#PART_Outer">
+        <Setter Property="Background" Value="{StaticResource ErrorBrush03}"/>
+    </Style>
+
+    <Style Selector="Button.Danger:disabled /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Background" Value="{StaticResource Error}"/>
+        <Setter Property="BorderBrush" Value="#D32F2F"/>
+        <Setter Property="Foreground" Value="White"/>
+    </Style>
+
     <Style Selector="Button.Smooth /template/ ContentPresenter#PART_ContentPresenter">
         <Setter Property="Background" Value="Transparent"/>
         <Setter Property="BorderThickness" Value="0"/>

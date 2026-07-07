@@ -1,0 +1,118 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- ==================== BASE ALERT ==================== -->
+
+    <Style Selector="Border.Alert">
+        <Setter Property="Background" Value="{StaticResource Shade100}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="BorderBrush" Value="{StaticResource Shade300}"/>
+        <Setter Property="CornerRadius" Value="8"/>
+        <Setter Property="Padding" Value="16"/>
+        <Setter Property="Margin" Value="0, 4"/>
+    </Style>
+
+    <!-- Alert title -->
+    <Style Selector="Border.Alert TextBlock.AlertTitle">
+        <Setter Property="FontWeight" Value="Bold"/>
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="Margin" Value="0, 0, 0, 4"/>
+    </Style>
+
+    <!-- Alert message text -->
+    <Style Selector="Border.Alert TextBlock.AlertText">
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="TextWrapping" Value="Wrap"/>
+    </Style>
+
+    <!-- ==================== PRIMARY ==================== -->
+
+    <Style Selector="Border.Alert.Primary">
+        <Setter Property="Background" Value="{StaticResource PrimaryBrush01}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource Blue300}"/>
+    </Style>
+
+    <Style Selector="Border.Alert.Primary TextBlock.AlertTitle">
+        <Setter Property="Foreground" Value="{StaticResource Blue800}"/>
+    </Style>
+
+    <Style Selector="Border.Alert.Primary TextBlock.AlertText">
+        <Setter Property="Foreground" Value="{StaticResource Blue700}"/>
+    </Style>
+
+    <!-- ==================== SECONDARY ==================== -->
+
+    <Style Selector="Border.Alert.Secondary">
+        <Setter Property="Background" Value="{StaticResource Shade100}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource Shade300}"/>
+    </Style>
+
+    <Style Selector="Border.Alert.Secondary TextBlock.AlertTitle">
+        <Setter Property="Foreground" Value="{StaticResource Shade800}"/>
+    </Style>
+
+    <Style Selector="Border.Alert.Secondary TextBlock.AlertText">
+        <Setter Property="Foreground" Value="{StaticResource Shade700}"/>
+    </Style>
+
+    <!-- ==================== SUCCESS ==================== -->
+
+    <Style Selector="Border.Alert.Success">
+        <Setter Property="Background" Value="#EDF7ED"/>
+        <Setter Property="BorderBrush" Value="#A5D6A7"/>
+    </Style>
+
+    <Style Selector="Border.Alert.Success TextBlock.AlertTitle">
+        <Setter Property="Foreground" Value="#2E7D32"/>
+    </Style>
+
+    <Style Selector="Border.Alert.Success TextBlock.AlertText">
+        <Setter Property="Foreground" Value="#33691E"/>
+    </Style>
+
+    <!-- ==================== ERROR / DANGER ==================== -->
+
+    <Style Selector="Border.Alert.Error">
+        <Setter Property="Background" Value="{StaticResource ErrorBrush01}"/>
+        <Setter Property="BorderBrush" Value="#EF9A9A"/>
+    </Style>
+
+    <Style Selector="Border.Alert.Error TextBlock.AlertTitle">
+        <Setter Property="Foreground" Value="#C62828"/>
+    </Style>
+
+    <Style Selector="Border.Alert.Error TextBlock.AlertText">
+        <Setter Property="Foreground" Value="#B71C1C"/>
+    </Style>
+
+    <!-- ==================== WARNING ==================== -->
+
+    <Style Selector="Border.Alert.Warning">
+        <Setter Property="Background" Value="#FFF8E1"/>
+        <Setter Property="BorderBrush" Value="#FFE082"/>
+    </Style>
+
+    <Style Selector="Border.Alert.Warning TextBlock.AlertTitle">
+        <Setter Property="Foreground" Value="#E65100"/>
+    </Style>
+
+    <Style Selector="Border.Alert.Warning TextBlock.AlertText">
+        <Setter Property="Foreground" Value="#BF360C"/>
+    </Style>
+
+    <!-- ==================== INFO ==================== -->
+
+    <Style Selector="Border.Alert.Info">
+        <Setter Property="Background" Value="#E1F5FE"/>
+        <Setter Property="BorderBrush" Value="#81D4FA"/>
+    </Style>
+
+    <Style Selector="Border.Alert.Info TextBlock.AlertTitle">
+        <Setter Property="Foreground" Value="#01579B"/>
+    </Style>
+
+    <Style Selector="Border.Alert.Info TextBlock.AlertText">
+        <Setter Property="Foreground" Value="#0277BD"/>
+    </Style>
+
+</Styles>
