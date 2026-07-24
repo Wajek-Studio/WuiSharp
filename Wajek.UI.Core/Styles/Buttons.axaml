@@ -120,20 +120,20 @@
     </Style>
 
     <Style Selector="Button.Danger /template/ ContentPresenter#PART_ContentPresenter">
-        <Setter Property="Background" Value="{StaticResource Error}"/>
-        <Setter Property="BorderBrush" Value="#D32F2F"/>
+        <Setter Property="Background" Value="{StaticResource Red500}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource Red700}"/>
         <Setter Property="Foreground" Value="White"/>
     </Style>
 
     <Style Selector="Button.Danger:pointerover /template/ ContentPresenter#PART_ContentPresenter">
-        <Setter Property="Background" Value="#D32F2F"/>
-        <Setter Property="BorderBrush" Value="#C62828"/>
+        <Setter Property="Background" Value="{StaticResource Red700}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource Red800}"/>
         <Setter Property="Foreground" Value="White"/>
     </Style>
 
     <Style Selector="Button.Danger:pressed /template/ ContentPresenter#PART_ContentPresenter">
-        <Setter Property="BorderBrush" Value="#B71C1C"/>
-        <Setter Property="Background" Value="#C62828"/>
+        <Setter Property="Background" Value="{StaticResource Red800}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource Red900}"/>
         <Setter Property="Foreground" Value="White"/>
     </Style>
 
@@ -143,8 +143,8 @@
     </Style>
 
     <Style Selector="Button.Danger:disabled /template/ ContentPresenter#PART_ContentPresenter">
-        <Setter Property="Background" Value="{StaticResource Error}"/>
-        <Setter Property="BorderBrush" Value="#D32F2F"/>
+        <Setter Property="Background" Value="{StaticResource Red500}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource Red700}"/>
         <Setter Property="Foreground" Value="White"/>
     </Style>
 
