@@ -74,15 +74,15 @@
 
     <Style Selector="Border.Alert.Error">
         <Setter Property="Background" Value="{StaticResource ErrorBrush01}"/>
-        <Setter Property="BorderBrush" Value="#EF9A9A"/>
+        <Setter Property="BorderBrush" Value="{StaticResource Red200}"/>
     </Style>
 
     <Style Selector="Border.Alert.Error TextBlock.AlertTitle">
-        <Setter Property="Foreground" Value="#C62828"/>
+        <Setter Property="Foreground" Value="{StaticResource Red800}"/>
     </Style>
 
     <Style Selector="Border.Alert.Error TextBlock.AlertText">
-        <Setter Property="Foreground" Value="#B71C1C"/>
+        <Setter Property="Foreground" Value="{StaticResource Red900}"/>
     </Style>
 
     <!-- ==================== WARNING ==================== -->

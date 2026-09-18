@@ -55,7 +55,18 @@
     <Color x:Key="Accent">#FF4081</Color>
     <Color x:Key="Success">#4CAF50</Color>
     <Color x:Key="Warning">#FF9800</Color>
-    <Color x:Key="Error">#F44336</Color>
+    <Color x:Key="Error">#EF4444</Color>
+
+    <!-- Danger (Red) Palette Colors -->
+    <Color x:Key="Red100Color">#FFCDD2</Color>
+    <Color x:Key="Red200Color">#EF9A9A</Color>
+    <Color x:Key="Red300Color">#E57373</Color>
+    <Color x:Key="Red400Color">#EF5350</Color>
+    <Color x:Key="Red500Color">#EF4444</Color>
+    <Color x:Key="Red600Color">#E53935</Color>
+    <Color x:Key="Red700Color">#D32F2F</Color>
+    <Color x:Key="Red800Color">#C62828</Color>
+    <Color x:Key="Red900Color">#B71C1C</Color>
 
     <!-- Misc -->
     <Color x:Key="Border">#EFEFEF</Color>
@@ -150,6 +161,17 @@
     <SolidColorBrush x:Key="SuccessBrush" Color="{StaticResource Success}"/>
     <SolidColorBrush x:Key="WarningBrush" Color="{StaticResource Warning}"/>
     <SolidColorBrush x:Key="ErrorBrush" Color="{StaticResource Error}"/>
+
+    <!-- Danger (Red) Palette Brushes -->
+    <SolidColorBrush x:Key="Red100" Color="{StaticResource Red100Color}"/>
+    <SolidColorBrush x:Key="Red200" Color="{StaticResource Red200Color}"/>
+    <SolidColorBrush x:Key="Red300" Color="{StaticResource Red300Color}"/>
+    <SolidColorBrush x:Key="Red400" Color="{StaticResource Red400Color}"/>
+    <SolidColorBrush x:Key="Red500" Color="{StaticResource Red500Color}"/>
+    <SolidColorBrush x:Key="Red600" Color="{StaticResource Red600Color}"/>
+    <SolidColorBrush x:Key="Red700" Color="{StaticResource Red700Color}"/>
+    <SolidColorBrush x:Key="Red800" Color="{StaticResource Red800Color}"/>
+    <SolidColorBrush x:Key="Red900" Color="{StaticResource Red900Color}"/>
 
     <!-- Misc Brushes -->
     <SolidColorBrush x:Key="BorderBrush" Color="{StaticResource Border}"/>
